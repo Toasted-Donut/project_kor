@@ -95,4 +95,10 @@ public class DriveFragment extends Fragment {
         });
         return bind.getRoot();
     }
+
+    @Override
+    public void onDestroy() {
+        super.onDestroy();
+        ((MainActivity)getActivity()).finish();
+    }
 }
