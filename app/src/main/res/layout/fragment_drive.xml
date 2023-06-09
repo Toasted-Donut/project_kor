@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DriveFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <SeekBar
+        android:layout_marginTop="100dp"
+        android:id="@+id/bar_power"
+        android:layout_width="240dp"
+        android:layout_height="60dp"
+        android:min="-126"
+        android:max="126"
+        android:progress="0"
+        android:layout_gravity="center|top"/>
+
+    <SeekBar
+        android:layout_marginBottom="200dp"
+        android:id="@+id/bar_steer"
+        android:layout_width="240dp"
+        android:layout_height="60dp"
+        android:min="-32"
+        android:max="32"
+        android:progress="0"
+        android:rotation="90"
+        android:layout_gravity="center|bottom"/>
+
+</FrameLayout>
